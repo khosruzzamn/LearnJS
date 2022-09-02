@@ -8,34 +8,24 @@
 </head>
 <body>
     
-   <h1 id="Heading1"> This is Heading  1 </h1>
+   <h1 id="Heading1" class="ClassNameTest"> This is Heading  1 </h1>
 
    <h2 id="Heading2"> this is heading 2 </h2>
 
 
+ <script>
 
+// we can learn here 3 things :$
 
-    <script>
+// 1.  getElementById
+// 2.getElementByClass
+// 3.getElementsByTagName
 
-   //get element by Id
+document.getElementById("Heading1").innerHTML = " This Text change is using getElementById ";
+document.getElementsByClassName("ClassNameTest").innerHTML = "This text change using getelementbyclassname";
+document.getElementsByTagName("h1")[0].innerHTML = " this text change by using getelementBytagName just must need to index set using this teg";
 
-//    document.getElementById("Heading1");
-
-   // To change the Hetml text We can  use it javascript 
-
-//    document.getElementById("Heading1").innerHTML = "Hello";
-
-   //short way veriable write and practise.
-
-   
-   // use get element by tagname
-
-//    Document.getElementByTagName("h1");
-
-   Document.getElementsByTagName("h2")[0].innerHTML = "HI";
-
-
-    </script>
+</script>
 
 
 
