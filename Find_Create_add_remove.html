@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title> Dom find,create,add,remove</title>
+
+</head>
+<body>
+    
+<a href=""> visit Google use this link </a>
+
+<div style="background-color:green ; color:wheat" id="my-div">
+
+    <h1> This is heading  1 </h1>
+    <h2> This is heading  2 </h2>
+</div>
+
+<script>
+
+   var link =  document.getElementsByTagName("a")[0];
+    link.innerHTML = "Study with khosruzzaman" ;
+    link.style.textDecoration = "none";
+    link.style.color = "green";
+    link.style.fontSize = "25px" ;
+
+
+    var heading3 = document.createElement("h1");
+
+    var text = document.createTextNode("This is heading");
+
+    heading3.appendChild(text);
+
+    var myDiv = document.getElementById("my-div");
+
+    myDiv.appendChild(heading3);
+
+    var heading2 = document.getElementsByTagName("h1")[1];
+    myDiv.removeChild(heading2);
+    
+
+
+</script>
+
+</body>
+</html>
