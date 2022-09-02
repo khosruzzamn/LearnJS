@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event handler to onclick Event </title>
+</head>
+<body>
+  
+    <button onclick="myMessage()"> Click Me </button>
+    <button onclick="myMessage2()"> Click Me 2</button>
+
+    <p id="paraId"> Demo </p>
+
+    <script>
+
+        function myMessage (){
+
+             var myVar = document.querySelector("#paraId");
+             myVar.innerHTML ="You have click on button 1 ";
+        }
+        function myMessage2 (){
+
+            var myVar = document.querySelector("#paraId");
+             myVar.innerHTML ="You have click on button 2";
+}
+    </script>
+
+
+
+</body>
+</html>
